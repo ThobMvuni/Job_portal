@@ -55,7 +55,6 @@ The application uses H2 in-memory database, which means:
 
 Data is stored only during runtime
 Data is cleared when the application stops
-H2 console is available at http://localhost:8080/h2-console
 JDBC URL: jdbc:h2:mem:job_portal
 Username: sa
 Password: (leave empty)
