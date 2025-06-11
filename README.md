@@ -2,7 +2,7 @@
 
 A console-based job portal built with **Java** and **Spring Boot**, allowing users to register as **job seekers or employers**, log in, and manage or search job listings through a simple command-line interface.
 
-![Job Portal Console Screenshot](job_portal.png)
+![Job Portal Console Screenshot](image/job_portal.png)
 
 ---
 
