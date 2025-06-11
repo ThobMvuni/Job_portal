@@ -6,12 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JobPortalApplication",
+            "request": "launch",
+            "mainClass": "com.jobportal.JobPortalApplication",
+            "projectName": "job-portal"
+        },
+        {
+            "type": "java",
             "name": "Attach",
             "request": "attach",
             "hostName": "localhost",
             "port": "<debug port of the debuggee>"
         },
-
         {
             "type": "chrome",
             "request": "launch",
