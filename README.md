@@ -1,63 +1,89 @@
-# Job_portal
+# 🧑‍💼 Job Portal Console Application
 
-# Job Portal Console Application
+A console-based job portal built with **Java** and **Spring Boot**, allowing users to register as **job seekers or employers**, log in, and manage or search job listings through a simple command-line interface.
 
-A console-based job portal application built with Spring Boot where employers can post jobs and job seekers can search and view job listings.
+![Job Portal Console Screenshot](image\job_portal.png)
 
-## Prerequisites
+---
+
+## 📌 Features
+
+- ✅ User registration (Job Seeker or Employer)
+- 🔐 Secure login with Spring Security
+- 📝 Post new jobs (Employers only)
+- 🔍 Search jobs by title and location
+- 🗂️ View all available jobs
+- 🏢 Company-specific job listings
+- 🧼 Clean in-memory database using H2
+
+---
+
+## 🛠️ Technologies Used
+
+- Java 17+
+- Spring Boot 2.7.0
+- Spring Security
+- Hibernate / JPA
+- H2 In-Memory Database
+- Maven
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
 
 - Java 8 or higher
 - Maven 3.6 or higher
 
-## Getting Started
+### 🔧 Setup
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Run the application using Maven:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ThobMvuni/job_portal.git
+   cd job_portal
+
+2. **Run the application**
    ```bash
    mvn clean spring-boot:run
 
+3. **Interact with the CLI menu**
+   
+   === Login Menu ===
+1. Login
+2. Register
+3. Exit
 
-Features
-User registration (Employer/Job Seeker)
-User login
-Post jobs (Employers only)
-View all jobs
-Search jobs by title and location
-View company-specific jobs
-Using the Application
-When you start the application, you'll see the main menu:
-Login
-Register
-Exit
-If you're a new user, choose Register and:
-Enter your email
-Enter your password
-Enter your full name
-Choose if you're an employer or job seeker
-If you're an employer, enter your company name
-After logging in:
-View all jobs
-Search for specific jobs
-If you're an employer:
-Post new jobs
-View your company's jobs
-To exit the application:
-Choose Logout from the main menu
-Or press Ctrl+C
-Technical Details
-Built with Spring Boot 2.7.0
-Uses H2 in-memory database
-Spring Security for authentication
-JPA/Hibernate for data persistence
-Database
-The application uses H2 in-memory database, which means:
+=== Job Seeker Menu ===
+1. Search Jobs
+2. View All Jobs
+3. Apply for a Job
+4. Exit
 
-Data is stored only during runtime
-Data is cleared when the application stops
-JDBC URL: jdbc:h2:mem:job_portal
-Username: sa
-Password: (leave empty)
+=== Employer Menu ===
+1. Post a Job
+2. View Your Jobs
+3. Delete a Job
+4. Exit
 
+4. **Project Structure**
 
-This README provides clear instructions on how to run and use the application, along with information about its features and technical details. Would you like me to explain any part of it in more detail?
+```
+job-portal/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/jobportal/
+│   │   │       ├── controller/
+│   │   │       ├── model/
+│   │   │       ├── repository/
+│   │   │       ├── service/
+│   │   │       └── JobPortalApplication.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│  
+├── pom.xml
+└── README.md
+```
+
